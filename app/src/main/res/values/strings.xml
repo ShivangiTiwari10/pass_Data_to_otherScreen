@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">CafeApp</string>
     <string name="wellcome_my_cafe">Welcome to My Cafe</string>
+    <string name="order_now">Order Now</string>
+    <string name="order_by_food_name">Order by food Name -</string>
+    <string name="veg">Veg</string>
+    <string name="nonvage">Nonvage</string>
+    <string name="sweet">Sweet</string>
 </resources>
