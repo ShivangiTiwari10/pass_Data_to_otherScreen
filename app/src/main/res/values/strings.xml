@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CafeApp</string>
+    <string name="wellcome_my_cafe">Wellcome My Cafe</string>
 </resources>
