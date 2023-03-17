@@ -10,23 +10,26 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    companion object{
-        const val KEY ="com.example.cafeapp.MainActivity.KEY"
+    companion object {
+        const val KEY = "com.example.cafeapp.MainActivity.KEY"
     }
+
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-          binding.btn.setOnClickListener {
+        binding.btn.setOnClickListener {
 
-              val orderPlaced ="${binding.editText1.toString()+" "},${binding.editText2.toString()+" "},${binding.editText3}"
+            val orderPlaced =
+                binding.editText1.text.toString() + " " + binding.editText2.text.toString()  +
+                        " " + binding.editText3.text.toString()+" "
 
-              val intent = Intent(this,OrderActivity::class.java)
-              intent.putExtra(KEY,orderPlaced)
-              startActivity(intent)
-          }
+            val intent = Intent(this, OrderActivity::class.java)
+            intent.putExtra(KEY, orderPlaced)
+            startActivity(intent)
+        }
         setContentView(binding.root)
     }
 }
